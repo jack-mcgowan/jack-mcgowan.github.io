@@ -1,43 +1,102 @@
 
 /*==================================VARIABLES===================================*/
 :root{
-    --body-bg-color: rgba(60,110,130,75);
+    --hover-bg-color: rgba(180,240,150,45);
+    --background-rgb-color: rgba(160,160,160,60);
+    --section-content-color: rgba(211,211,211,60);
     --body-font-color: black;
     --p-font-size:18px;
     --fig-bg-color: rgba(128,128,128,60);
     --main-margin: 0 auto;
     --main-font-family: "Times New Roman", Times, serif;
 }
+/*=======================================HEADER=================================*/
+header{
+    background-color:var(--background-rgb-color);
+}
+/*========================================NAV===================================*/
+nav{
+    background-color:var(--section-content-color);
+}
+nav li{
+    display: inline-block;
+    list-style-type: none;
+    width: 12em;
+    font-family: var(--main-font-family);
+}
+nav li a:hover{
+    font-size: 18px;
+}
+.activePage{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: var(--main-font-family);
+    text-decoration: underline overline;
+
+}
 /*=====================================MAIN=====================================*/
 main section{
     padding: 1em;
+    height: auto;
 }
+/*=====================================SECTION==================================*/
+section ul{
+    padding: 0;
+    list-style-type: none;
+    background-color:var(--section-content-color);
+    height: 90%;
+    margin-bottom: 1em;
+}
+section li{
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 2em;
+    background-color:var(--section-content-color);
+}
+section p{
+    height: 90%;
+    margin-bottom: 1em;
+}
+
 /*=====================================BODY=====================================*/
 body{
     margin: var(--main-margin);
     padding: 1em;
     width: 90%;
-    background: url("../images/siteBackground.jpg") fixed;
     font-family: var(--main-font-family);
+    background: url("../images/siteBackground.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 p{
     margin: var(--main-margin);
     font-size: var(--p-font-size);
     font-family: var(--main-font-family);
-    background-color: var(--body-bg-color);
+    background-color: var(--section-content-color);
     color: var(--body-font-color);
-    text-indent: 3em;
 }
 section pre{
-    background-color: var(--body-bg-color);
+    /*background-color: var(--body-bg-color);*/
 }
 h1{
     text-transform: uppercase;
 }
 ul{
-    background-color: var(--body-bg-color);
+    /*background-color: var(--body-bg-color);*/
     color: var(--body-font-color);
+}
+h3{
+    background-color:var(--background-rgb-color);
+}
+/*=====================================Footer===================================*/
+footer{
+    position:fixed;
+    width:90%;
+    bottom:0;
+    height: 1.5em;
 }
 /*=======================================IMG====================================*/
 figure {
@@ -45,7 +104,7 @@ figure {
     border-radius: 0.4em;
     padding: 0.5em;
     text-align: center;
-    background-color: var(--body-bg-color);
+    /*background-color: var(--body-bg-color);*/
 }
 
 figcaption {
@@ -71,12 +130,12 @@ img{
     margin-left: 1em;
 }
 .medium{
-    width:30%;
+    width:350px;
 }
 cite{
     font-size: xx-small;
     color: black;
-    
+
 }
 /*=======================================LINKS==================================*/
 a:link{
@@ -87,32 +146,16 @@ a:link{
 a:hover{
     text-decoration: underline;
     font-family: var(--main-font-family);
-    background-color: var(--body-bg-color);
+    background-color: var(--hover-bg-color);
 }
 a:visited{
     color: var(--body-font-color);
 }
 /*=======================================FORM===================================*/
-form fieldset{
+/*form fieldset{
     background-color:var(--fig-bg-color);
 }
-/*========================================NAV===================================*/
-nav li{
-    display: inline-block;
-    list-style-type: none;
-    width: 12em;
-    font-family: var(--main-font-family);
-}
-nav li a:hover{
-    font-size: 18px;
-}
-.activePage{
-    font-weight: bold;
-    font-size: 20px;
-    font-family: var(--main-font-family);
-    text-decoration: underline overline;
-    
-}
+*/
 /*======================================TABLE===================================*/
 table, th, td{
     border: 1px solid lightgray
@@ -120,10 +163,10 @@ table, th, td{
 table{
     width: 80%;
     margin-left:10%;
-    
+
 }
 table caption{
-    
+
 }
 tr:nth-child(even){
     background-color: lightgrey;
@@ -143,15 +186,39 @@ main.grid{
     display: grid;
     grid-template-columns: 40% 30% 30%;
 }
-
-/*=====================================View port================================*/
-@media (max-width: 1080px){
-    main.grid{
-        grid-template-columns: auto auto auto;
+main.form{
+    form{
+        margin-bottom: 1.5em;
     }
+
 }
-@media (max-width: 720px){
-    main.grid{
-        grid-template-columns: auto auto;
+main.index{
+    display: grid;
+    grid-template-columns: 16% 28% 28% 28%;
+    section{
+        margin-bottom: 3em;
+    }
+    /*footer{
+        position:absolute;
+        bottom:0;
+        margin-top: 2em;
+    }*/
+}
+main.listing{
+    display:grid;
+    grid-template-columns: auto auto auto;
+}
+main.about{
+    display: grid;
+    grid-template-columns: auto;
+}
+/*=====================================View port================================*/
+
+@media (max-width: 1080px){
+    main.index{
+        grid-template-columns: auto;
+    }
+    main.listing{
+        grid-template-columns: auto;
     }
 }
