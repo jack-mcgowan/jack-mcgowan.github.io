@@ -10,7 +10,6 @@ nav {
 }
 nav ol {
     padding: 0.1em;
-
 }
 
 li {
@@ -54,7 +53,6 @@ a:hover {
     border-bottom:1px solid white;
 }
 .date {
-    padding: 8px 8px;
-    margin-left: 7%;
-    font-size: 23px;
+    margin-left: 2%;
+    font-size: 15px;
 }
