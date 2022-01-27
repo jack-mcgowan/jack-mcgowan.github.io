@@ -60,10 +60,10 @@ a:hover {
   padding: 5px 20px;
 }
 .card {
-  box-shadow: 2px 2px 2px 2px rgb(7, 7, 7);
+  box-shadow: 2px 2px 2px 2px rgb(25, 25, 25);
   transition: 0.3s;
   padding: 4px 4px;
-  background-color: #000;
+  background-color: #414141;
   text-align: center;
   color: #FFFFFF;
   margin-top: 10%;
@@ -74,7 +74,7 @@ a:hover {
   position: relative;
 }
 .card:hover {
-  box-shadow: 4px 4px 4px 4px rgb(7,7,7);
+  box-shadow: 3px 3px 3px 3px rgb(25, 25, 25);
 }
 .card_header {
     font-size: 25px;
