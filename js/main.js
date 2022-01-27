@@ -2,7 +2,7 @@ function date()
     {   
         let today = new Date();
         let time = today.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-        let date = today.toLocaleDateString('en-US', { dataStyle: 'long'} );
+        let date = today.toLocaleDateString('en-US', { dateStyle: 'long'} );
         /*
         var a = Date.now();
         var b = new Date(a);
