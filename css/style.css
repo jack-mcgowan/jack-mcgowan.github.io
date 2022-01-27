@@ -45,3 +45,39 @@ a:hover {
 .date {
     font-size: 18px;
 }
+
+.row {
+    margin: 0 10px;
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column {
+  float: left;
+  width: 22.5%;
+  padding: 5px 20px;
+}
+.card {
+  box-shadow: 2px 2px 2px 2px rgb(7, 7, 7);
+  transition: 0.3s;
+  padding: 4px 4px;
+  background-color: #000;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 10%;
+  border-radius: 5px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #adadad;
+  position: relative;
+}
+.card:hover {
+  box-shadow: 4px 4px 4px 4px rgb(7,7,7);
+}
+.card_header {
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom:20px;
+}
