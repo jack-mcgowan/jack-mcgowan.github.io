@@ -4,6 +4,15 @@ body {
     background-color: #313131;
 }
 
+section[class="^top"] h1 {
+    margin: auto; 
+}
+
+section[class="^top"] p {
+    margin: auto;
+    margin-bottom: 1%;
+}
+
 nav {
     border-top: 2px solid;
     border-color: white;
