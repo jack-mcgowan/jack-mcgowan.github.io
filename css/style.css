@@ -74,7 +74,7 @@ a:hover {
   position: relative;
 }
 .card:hover {
-  box-shadow: 3px 3px 3px 3px rgb(25, 25, 25);
+  box-shadow: 3px 3px 3px 3 px rgb(25, 25, 25);
 }
 .card_header {
     font-size: 25px;
