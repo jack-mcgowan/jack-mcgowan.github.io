@@ -38,31 +38,10 @@ a {
 }
 
 a:hover {
-    font-size: 25px;
-    color:ivory;
+    color:orange;
     text-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
 }
 
-.title {
-    margin-top: 15%;
-    margin-left: 7%;
-    height: 50px;   
-    position: relative;
-    z-index: 1;
-    color: white;
-    font-size: 30px;
-    padding: 8px 8px;
-    font-weight: bold;
-}
-.title::before {
-    content : "";
-    position: absolute;
-    left    : 0;
-    bottom  : 0;
-    height  : 1px;
-    width   : 23%;
-    border-bottom:1px solid white;
-}
 .date {
     font-size: 18px;
 }
