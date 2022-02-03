@@ -2,22 +2,15 @@ body {
     color: white;
     font-family: 'Courier New', Courier, monospace;
     background-color: #313131;
+    flex-grow: 1;
     display: flex;
-}
-
-section {
-    width: 98%;
-    display: flex;
-    justify-content: center;
-}
-section[class="^top"] h1 {
-    margin: auto; 
-}
-
-section[class="^top"] p {
+    flex-direction: column;
+    align-items:center;
     margin: auto;
-    margin-bottom: 1%;
+    width:100%;
 }
+
+
 
 nav {
     border-top: 2px solid;
