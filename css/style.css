@@ -2,8 +2,14 @@ body {
     color: white;
     font-family: 'Courier New', Courier, monospace;
     background-color: #313131;
+    display: flex;
 }
 
+section {
+    width: 98%;
+    display: flex;
+    justify-content: center;
+}
 section[class="^top"] h1 {
     margin: auto; 
 }
