@@ -39,28 +39,20 @@ a:hover {
     text-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
 }
 
-.centered_content { 
-    text-align: center;
-    align-content: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
 .date {
     font-size: 18px;
 }
 
-.row {
+.card_row {
     margin: 0 10px;
     width: 80%;
 }
-.row::after {
+.card_row::after {
     content: "";
     display: table;
     clear: both;
 }
-.column {
+.card_column {
     float: center;
     padding: 5px 30px;
 }
@@ -87,24 +79,13 @@ a:hover {
     padding-bottom:20px;
 }
 
-
-html,
-body {
-  height: 100%;
-  margin: 0;
-}
-
-.box {
+.container {
   display: flex;
   flex-flow: column;
   height: 100%;
 }
 
-.box .row {
-  border: 1px dotted grey;
-}
-
-.box .row.header {
+.container header.row {
   flex: 0 1 auto;
   /* The above is shorthand for:
   flex-grow: 0,
@@ -113,10 +94,10 @@ body {
   */
 }
 
-.box .row.content {
+.container .row.content {
   flex: 1 1 auto;
 }
 
-.box .row.footer {
+.container footer.row {
   flex: 0 1 40px;
 }
