@@ -41,6 +41,9 @@ a:hover {
 .centered_content { 
     text-align: center;
     align-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .date {
@@ -49,6 +52,7 @@ a:hover {
 
 .row {
     margin: 0 10px;
+    width: 80%;
 }
 .row::after {
     content: "";
