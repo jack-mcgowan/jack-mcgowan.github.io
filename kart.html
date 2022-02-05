@@ -16,23 +16,33 @@
         </section>
         <script>
           function rng(gp) {
-            alert('beginnning');
             let parentElem = document.getElementById("rngContent");
             for (var i = 0; i < gp; i++) {
                 let chldHeading = document.createElement("h3");
                 let chldCup = document.createElement("p");
                 let chldCourse = document.createElement("p");
 
-                chldHeading.textContent = "---Event " + (i + 1).toString + "---";
-                chldCup.textContent = "Cup #: " + (Math.random(12) + 1).toString;
-                chldCourse.textContent = "(If Applicable) Track #: " + (Math.random(4) + 1).toString;
+                var output = ''
+                output += '---Event ';
+                outout += (i + 1).toString;
+                output += '---';
+                chldHeading.textContent = output;
+
+                output = ''
+                output += 'Cup #: ';
+                outout += (Math.random(12) + 1).toString;
+                chldCup.textContent = output;
+
+                output = '';
+                output += '(If Applicable) Track #: ';
+                output += (Math.random(4) + 1).toString;
+                chldCourse.textContent = output;
 
                 parentElem.appendChild(chldHeading);
                 parentElem.appendChild(chldCup);
                 parentElem.appendChild(chldCourse);
                 
             }
-            alert("DONE");
           }
         </script>
       </body>
