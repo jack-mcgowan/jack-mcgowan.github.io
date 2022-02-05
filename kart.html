@@ -17,7 +17,7 @@
         <script>
           function rng(gp) {
             let parentElem = document.getElementById("rngContent");
-            for (let i = 1; i <= gp; i++) {
+            for (var i = 1; i <= gp; i++) {
                 let chldHeading = document.createElement("h3");
                 let chldCup = document.createElement("p");
                 let chldCourse = document.createElement("p");
@@ -29,8 +29,9 @@
                 parentElem.appendChild(chldHeading);
                 parentElem.appendChild(chldCup);
                 parentElem.appendChild(chldCourse);
-
+                
             }
+            alert("DONE");
           }
         </script>
       </body>
