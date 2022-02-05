@@ -18,12 +18,12 @@
           function rng(gp) {
             alert('beginnning');
             let parentElem = document.getElementById("rngContent");
-            for (var i = 1; i <= gp; i++) {
+            for (var i = 0; i < gp; i++) {
                 let chldHeading = document.createElement("h3");
                 let chldCup = document.createElement("p");
                 let chldCourse = document.createElement("p");
 
-                chldHeader.textContent = "---Event " + i.toString + "---";
+                chldHeading.textContent = "---Event " + (i + 1).toString + "---";
                 chldCup.textContent = "Cup #: " + (Math.random(12) + 1).toString;
                 chldCourse.textContent = "(If Applicable) Track #: " + (Math.random(4) + 1).toString;
 
