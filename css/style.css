@@ -105,7 +105,7 @@ a:hover {
 
 /*=====================================View port================================*/
 @media (max-width: 400px){
-    h1 {
-        text-align: centered;
+    header h1, header p, nav {
+        text-align: center;
     }
 }
