@@ -101,3 +101,11 @@ a:hover {
 .container footer.row {
   flex: 0 1 40px;
 }
+
+
+/*=====================================View port================================*/
+@media (max-width: 400px){
+    h1 {
+        text-align: centered;
+    }
+}
