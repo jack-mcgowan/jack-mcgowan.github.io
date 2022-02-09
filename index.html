@@ -5,13 +5,61 @@
         <meta charset="utf-8">
         <meta name="author" content="Jack McGowan">
         <meta name="description" content="My Personal Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="icon" href="images/favicon.ico">
-        <link href="css/linksStyle.css" rel="stylesheet" type="text/css">
+        <script src="js/main.js"></script>
+
     </head>
-    <body>
-        <h1>Jack McGowan --- My Links</h1>
-        <p> <a href="https://www.twitter.com/jackmcg12">My Twitter</a></p>
-        <p><a href="https://jcmcgowa.w3.uvm.edu/cs008">UVM CS008 Site</a></p>
-        <p><a href="https://jcmcgowa.w3.uvm.edu/cs008/final">Catamount Classifieds -- My Biggest Project To Date</a></p>
+    <body onload="date()">
+        <section class="container">
+            <header>
+                <h1 style="margin-bottom: 5px;">Jack McGowan</h1>
+                <p class="date" id="todaysDate">-------- --, ---- | --:-- --</p>
+                <nav>
+                    <ol>
+                        <li><a>Main</a></li>
+                        <li><a>About Me</a></li>
+                        <li><a>Projects</a></li>
+                    </ol>
+                </nav>
+            </header>
+
+
+            <section class="content">
+                <div class="card_row">
+                    <div class="card_column">
+                        <div class="card">
+                        <div class="card_header">information</div>
+                        <a href="files/McGowan_resume.pdf" target="_blank">Resume</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card_row">
+                    <div class="card_column">
+                        <div class="card">
+                        <div class="card_header">accounts</div>
+                        <a href="https://www.github.com/mcgows/" target="_blank">GitHub</a>
+                        <a href="https://gitlab.com/mcgows" target="_blank">GitLab</a>
+                        <a href="https://www.twitter.com/jackmcg12" target="_blank">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_row">
+                    <div class="card_column">
+                        <div class="card">
+                        <div class="card_header">projects</div>
+                        <a href="https://mcgows.com" target="_blank">...adding...</a>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            
+            <footer>
+
+            </footer>
+        </section>
     </body>
 </html>
