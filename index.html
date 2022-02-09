@@ -1,66 +1,53 @@
-<!DOCTYPE HTML>
-<html lang="en">
-    <head>
-        <title>Landing Page</title>
-        <meta charset="utf-8">
-        <meta name="author" content="Jack McGowan">
-        <meta name="description" content="My Personal Website">
-        <link rel="icon" href="images/favicon.ico">
-
-        <link href="css/style.css" rel="stylesheet" type="text/css">
-        <link href="css/phone_style.css" rel="stylesheet" media="(max-width:600px)" type="text/css">
-  
-        <script src="js/main.js"></script>
-    </head>
-    <body onload="date()">
-        <section class="container">
-            <header>
-                <h1 style="margin-bottom: 5px;">Jack McGowan</h1>
-                <p class="date" id="todaysDate">-------- --, ---- | --:-- --</p>
-                <nav>
-                    <ol>
-                        <li><a>Main</a></li>
-                        <li><a>About Me</a></li>
-                        <li><a>Projects</a></li>
-                    </ol>
-                </nav>
-            </header>
+#include file="head.html"
+<body onload="date()">
+    <section class="container">
+        <header>
+            <h1 style="margin-bottom: 5px;">Jack McGowan</h1>
+            <p class="date" id="todaysDate">-------- --, ---- | --:-- --</p>
+            <nav>
+                <ol>
+                    <li><a>Main</a></li>
+                    <li><a>About Me</a></li>
+                    <li><a>Projects</a></li>
+                </ol>
+            </nav>
+        </header>
 
 
-            <section class="content">
-                <div class="card_row">
-                    <div class="card_column">
-                        <div class="card">
-                        <div class="card_header">Informtation</div>
-                        <a href="files/McGowan_resume.pdf" target="_blank">Resume</a>
+        <section class="content">
+            <div class="card_row">
+                <div class="card_column">
+                    <div class="card">
+                    <div class="card_header">Informtation</div>
+                    <a href="files/McGowan_resume.pdf" target="_blank">Resume</a>
 
-                        </div>
                     </div>
                 </div>
-                <div class="card_row">
-                    <div class="card_column">
-                        <div class="card">
-                        <div class="card_header">accounts</div>
-                        <a href="https://www.github.com/mcgows/" target="_blank">GitHub</a>
-                        <a href="https://gitlab.com/mcgows" target="_blank">GitLab</a>
-                        <a href="https://www.twitter.com/jackmcg12" target="_blank">Twitter</a>
-                        </div>
+            </div>
+            <div class="card_row">
+                <div class="card_column">
+                    <div class="card">
+                    <div class="card_header">accounts</div>
+                    <a href="https://www.github.com/mcgows/" target="_blank">GitHub</a>
+                    <a href="https://gitlab.com/mcgows" target="_blank">GitLab</a>
+                    <a href="https://www.twitter.com/jackmcg12" target="_blank">Twitter</a>
                     </div>
                 </div>
-                <div class="card_row">
-                    <div class="card_column">
-                        <div class="card">
-                        <div class="card_header">projects</div>
-                        <a href="https://mcgows.com" target="_blank">...adding...</a>
-                        </div>
+            </div>
+            <div class="card_row">
+                <div class="card_column">
+                    <div class="card">
+                    <div class="card_header">projects</div>
+                    <a href="https://mcgows.com" target="_blank">...adding...</a>
                     </div>
                 </div>
+            </div>
 
-            </section>
-            
-            <footer>
-
-            </footer>
         </section>
-    </body>
+        
+        <footer>
+
+        </footer>
+    </section>
+</body>
 </html>

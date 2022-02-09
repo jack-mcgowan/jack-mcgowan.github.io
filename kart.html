@@ -1,53 +1,42 @@
-<!DOCTYPE HTML>
-<html lang="en">
-    <head>
-        <title>Jack McGowan</title>
-        <meta charset="utf-8">
-        <meta name="author" content="Jack McGowan">
-        <meta name="description" content="My Personal Website">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <h1 style="text-align:center;">Mario Kart Randomize</h1>
-      
-        Grand Prix(s) / Races : <input type="number" name="gp" id="gp" pattern="\d*"><br>
-        <button onclick="rng(document.getElementById('gp').value)">Generate</button>
-        <section id="rngContent">
-            
-        </section>
-        <script>
-          function rng(gp) {
-            let parentElem = document.getElementById("rngContent");
-            parentElem.innerHTML = "";
-            for (var i = 0; i < gp; i++) {
-                let chldHeading = document.createElement("h3");
-                let chldCup = document.createElement("p");
-                let chldCourse = document.createElement("p");
+#include file="head.html"
+<body>
+    <h1 style="text-align:center;">Mario Kart Randomize</h1>
+    Grand Prix(s) / Races : <input type="number" name="gp" id="gp" pattern="\d*"><br>
+    <button onclick="rng(document.getElementById('gp').value)">Generate</button>
+    <section id="rngContent">
+        
+    </section>
+    <script>
+      function rng(gp) {
+        let parentElem = document.getElementById("rngContent");
+        parentElem.innerHTML = "";
+        for (var i = 0; i < gp; i++) {
+            let chldHeading = document.createElement("h3");
+            let chldCup = document.createElement("p");
+            let chldCourse = document.createElement("p");
 
-                var output = '';
-                output += '---Event ';
-                output += (i + 1);
-                output += '---';
-                chldHeading.textContent = output;
-                chldHeading.style.color = "orange";
+            var output = '';
+            output += '---Event ';
+            output += (i + 1);
+            output += '---';
+            chldHeading.textContent = output;
+            chldHeading.style.color = "orange";
 
-                output = '';
-                output += 'Cup #: ';
-                output += Math.floor((Math.random()*12) + 1);
-                chldCup.textContent = output;
+            output = '';
+            output += 'Cup #: ';
+            output += Math.floor((Math.random()*12) + 1);
+            chldCup.textContent = output;
 
-                output = '';
-                output += '(If Applicable) Track #: ';
-                output += Math.floor((Math.random()*4)+ 1);
-                chldCourse.textContent = output;
+            output = '';
+            output += '(If Applicable) Track #: ';
+            output += Math.floor((Math.random()*4)+ 1);
+            chldCourse.textContent = output;
 
-                parentElem.appendChild(chldHeading);
-                parentElem.appendChild(chldCup);
-                parentElem.appendChild(chldCourse);
-                
-            }
-          }
-        </script>
-      </body>
+            parentElem.appendChild(chldHeading);
+            parentElem.appendChild(chldCup);
+            parentElem.appendChild(chldCourse);
+        }
+      }
+  </script>
+</body>
 </html>
