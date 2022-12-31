@@ -19,6 +19,7 @@
       </section>
       <script>
         function rng(gp) {
+	  const NUM_CUPS = 18;
           let parentElem = document.getElementById("rngContent");
           parentElem.innerHTML = "";
           for (var i = 0; i < gp; i++) {
@@ -35,7 +36,7 @@
 
               output = '';
               output += 'Cup #: ';
-              output += Math.floor((Math.random()*12) + 1);
+              output += Math.floor((Math.random()* NUM_CUPS ) + 1);
               chldCup.textContent = output;
 
               output = '';
